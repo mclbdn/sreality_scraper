@@ -1,22 +1,78 @@
-no_of_rooms,area,locality,price
-29m²,1+kk,"U parního mlýna, Praha 7 - Holešovice",5 350 000 Kč
-29m²,1+kk,"Studentská, Praha 6 - Dejvice",5 843 000 Kč
-42m²,2+kk,"Studentská, Praha 6 - Dejvice",7 131 000 Kč
-72m²,2+1,"Boleslavská, Praha - Vinohrady",8 259 300 Kč
-46m²,2+kk,"Perucká, Praha 2 - Vinohrady",8 690 000 Kč
-54m²,2+kk,"Peroutkova, Praha 5 - Jinonice",6 468 000 Kč
-71m²,3+1,"Myslivečkova, Praha 6 - Břevnov",8 995 000 Kč
-68m²,3+kk,"Konšelská, Praha 8 - Libeň",8 150 000 Kč
-27m²,1+kk,"Perucká, Praha 2 - Vinohrady",6 557 000 Kč
-25m²,1+kk,"Perucká, Praha 2 - Vinohrady",5 408 000 Kč
-50m²,2+kk,"Perucká, Praha 2 - Vinohrady",10 471 000 Kč
-50m²,1+1,"Za Vokovickou vozovnou, Praha 6 - Liboc",6 284 000 Kč
-116m²,3+kk,"Dlážděná, Praha 1 - Nové Město",17 942 000 Kč
-19m²,1+kk,"Studentská, Praha 6 - Dejvice",3 844 000 Kč
-62m²,3+kk,"Perucká, Praha 2 - Vinohrady",8 149 000 Kč
-50m²,2+kk,"Českodubská, Praha 9 - Vinoř",5 590 000 Kč
-37m²,2+kk,"Novákových, Praha 8 - Libeň",7 300 000 Kč
-70m²,3+1,"Minická, Praha 8 - Čimice",6 950 000 Kč
-65m²,3+kk,"Hasova, Praha 4 - Modřany",6 390 000 Kč
-68m²,2+1,"Žitná, Praha 1 - Nové Město",7 670 000 Kč
-54m²,2+kk,Praha,6 700 000 Kč
+no_of_rooms,area_in_m2,locality,price
+104m²,4+kk,Praha 8,13 739 348 Kč
+29m²,1+kk,Praha 6,5 843 000 Kč
+42m²,2+kk,Praha 6,7 131 000 Kč
+46m²,2+kk,Praha 2,8 690 000 Kč
+54m²,2+kk,Praha 5,6 468 000 Kč
+71m²,3+1,Praha 6,8 995 000 Kč
+68m²,3+kk,Praha 8,8 150 000 Kč
+27m²,1+kk,Praha 2,6 557 000 Kč
+25m²,1+kk,Praha 2,5 408 000 Kč
+50m²,2+kk,Praha 2,10 471 000 Kč
+50m²,1+1,Praha 6,6 284 000 Kč
+116m²,3+kk,Praha 1,17 942 000 Kč
+19m²,1+kk,Praha 6,3 844 000 Kč
+62m²,3+kk,Praha 2,8 149 000 Kč
+50m²,2+kk,Praha 9,5 590 000 Kč
+37m²,2+kk,Praha 8,7 300 000 Kč
+70m²,3+1,Praha 8,6 950 000 Kč
+65m²,3+kk,Praha 4,6 390 000 Kč
+68m²,2+1,Praha 1,7 670 000 Kč
+29m²,1+kk,Praha 7,5 350 000 Kč
+45m²,2+kk,Praha 2,6 740 000 Kč
+72m²,3+kk,Praha 2,11 250 000 Kč
+58m²,2+kk,Praha 9,7 490 000 Kč
+114m²,4+kk,Praha 5,14 500 000 Kč
+97m²,4+kk,Praha 5,12 290 000 Kč
+122m²,4+1,Praha 1,24 990 000 Kč
+74m²,3+kk,Praha 1,7 900 000 Kč
+48m²,2+kk,Praha 8,5 999 000 Kč
+136m²,4+1,Praha 1,15 000 000 Kč
+94m²,3+1,Praha 2,11 997 000 Kč
+39m²,1+1,Praha 5,6 490 000 Kč
+104m²,3+kk,Praha 8,14 990 000 Kč
+44m²,2+kk,Praha 3,7 390 000 Kč
+42m²,2+kk,Praha 5,5 885 600 Kč
+96m²,3+kk,Praha 1,8 380 000 Kč
+53m²,2+1,Praha 6,7 105 000 Kč
+90m²,3+kk,Praha 1,10 880 000 Kč
+111m²,2+1,Praha 2,6 938 000 Kč
+23m²,1+kk,Praha 1,2 700 000 Kč
+29m²,1+kk,Praha 7,5 350 000 Kč
+50m²,2+kk,Praha 2,7 748 000 Kč
+46m²,1+1,Praha 3,5 797 000 Kč
+34m²,1+1,Praha 7,4 570 000 Kč
+170m²,4+kk,Praha 9,11 900 000 Kč
+28m²,1+kk,Praha 1,4 197 000 Kč
+106m²,3+kk,Praha 1,18 630 000 Kč
+36m²,2+kk,Praha 5,4 900 000 Kč
+52m²,1+kk,Praha 1,4 479 560 Kč
+96m²,3+kk,Praha 1,19 200 000 Kč
+61m²,2+kk,Praha 1,5 072 480 Kč
+70m²,3+kk,Praha 7,13 900 000 Kč
+23m²,1+kk,Praha 3,4 000 000 Kč
+72m²,3+1,Praha 4,7 800 000 Kč
+52m²,2+1,Praha 1,7 400 000 Kč
+33m²,1+kk,Praha 9,4 150 000 Kč
+94m²,3+1,Praha 2,9 900 000 Kč
+79m²,3+1,Praha 4,7 300 000 Kč
+91m²,3+kk,Praha 4,13 720 000 Kč
+75m²,3+kk,Praha 7,6 900 000 Kč
+104m²,3+1,Praha 7,9 495 000 Kč
+99m²,3+kk,Praha 1,10 400 000 Kč
+97m²,3+1,Praha 4,9 850 000 Kč
+49m²,1+kk,Praha 9,4 752 119 Kč
+65m²,2+kk,Praha 9,5 950 271 Kč
+52m²,2+1,Praha 1,5 300 000 Kč
+108m²,4+kk,Praha 1,12 490 000 Kč
+102m²,3+kk,Praha 5,11 890 000 Kč
+59m²,2+1,Praha 1,6 850 000 Kč
+59m²,2+1,Praha 2,7 703 000 Kč
+102m²,4+kk,Praha 3,13 674 000 Kč
+31m²,1+kk,Praha 1,3 640 000 Kč
+102m²,3+kk,Praha 9,12 801 124 Kč
+74m²,3+kk,Praha 9,9 303 370 Kč
+52m²,2+kk,Praha 5,6 668 000 Kč
+87m²,2+1,Praha 2,10 500 000 Kč
+50m²,2+1,Praha 6,5 966 000 Kč
+128m²,3+kk,Praha 3,15 900 000 Kč
