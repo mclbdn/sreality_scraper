@@ -19,7 +19,8 @@ class Sreality:
         self.no_of_pages_to_scrape = no_of_pages_to_scrape
         self.driver.get(self.URL)
 
-    def edit_text(self, text: str) -> str:
+    # Replace text i.e. "Prodej bytu 3+1 94 m² (Podkrovní)" for just a list of area & no_of_rooms
+    def edit_text(self, text: str):
         # Get rid of parenthesis
         sub = regex.sub(r"\([^)]*\)", "", text)
         # Split the text
@@ -30,7 +31,8 @@ class Sreality:
         no_of_rooms = sub[-3]
         return [area, no_of_rooms]
 
-    def get_prague_area(self, text: str):
+    # Replace text i.e. "Neklanova, Praha 2 - Vyšehrad" for "Praha 2"
+    def replace_prague_area(self, text: str):
         prague_areas = [
         "Praha 1",
         "Praha 2",
@@ -64,7 +66,7 @@ class Sreality:
                     title_text = title.text
                     no_of_rooms, area = self.edit_text(title_text)
                     locality = property.find_elements(By.CLASS_NAME, "locality")[0]
-                    locality_text = self.get_prague_area(locality.text)
+                    locality_text = self.replace_prague_area(locality.text)
                     price = property.find_elements(By.CLASS_NAME, "norm-price")[0]
                     price_text = price.text
                     # If the owner didn't mention city part, skip
@@ -76,11 +78,9 @@ class Sreality:
                 next_btn.click()
                 time.sleep(10)
                 i += 1
+            
+            self.driver.quit()
 
-
-                # elem = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.CLASS_NAME, "paging-next")))
-                # elem.click()
-                # i += 1
 
 sreality = Sreality(driver = webdriver.Chrome(ChromeDriverManager().install()), no_of_pages_to_scrape=3)
 sreality.write_to_csv()
