@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 class Sreality:
     def __init__(self, driver: WebDriver, no_of_pages_to_scrape: int = 10000) -> None:
         self.URL = "https://www.sreality.cz/hledani/prodej/byty/praha?bez-aukce=1"
-        self.CSV_HEADER = ["no_of_rooms", "area_in_m2", "locality", "price"]
+        self.CSV_HEADER = ["no_of_rooms", "area_in_m2", "locality", "price_in_kc"]
         self.driver = driver
         self.no_of_pages_to_scrape = no_of_pages_to_scrape
         self.driver.get(self.URL)

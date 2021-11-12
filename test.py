@@ -1,7 +1,7 @@
 import regex
 
-text = "Prodej bytu 2+kk 37 m² (Loft)"
+text = "13 739 348 Kč"
 
-result = regex.sub(r'\([^)]*\)', '', text)
+result = regex.sub(r'/\D+/g', '', text)
 
-print(result.split())
+print(result)
