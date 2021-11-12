@@ -7,8 +7,7 @@ from selenium.webdriver.common.by import By
 # blah
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 
 
 class Sreality:
@@ -69,8 +68,8 @@ class Sreality:
                     locality_text = self.replace_prague_area(locality.text)
                     price = property.find_elements(By.CLASS_NAME, "norm-price")[0]
                     price_text = price.text
-                    # If the owner didn't mention city part, skip
-                    if locality_text == None:
+                    # If the owner didn't mention city part or price, skip
+                    if locality_text == None or price_text == "Info o ceně u RK":
                         continue
                     writer.writerow([no_of_rooms, area, locality_text, price_text])
 
@@ -81,6 +80,3 @@ class Sreality:
             
             self.driver.quit()
 
-
-sreality = Sreality(driver = webdriver.Chrome(ChromeDriverManager().install()), no_of_pages_to_scrape=3)
-sreality.write_to_csv()
