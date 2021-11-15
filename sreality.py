@@ -1,8 +1,9 @@
 import csv
-import time
 import regex
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class Sreality:
@@ -53,6 +54,7 @@ class Sreality:
             i = 0
 
             while i < self.no_of_pages_to_scrape:
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "property")))
                 properties = self.driver.find_elements(By.CLASS_NAME, "property")
                 for property in properties:
                     title = property.find_elements(By.CLASS_NAME, "name")[0]
@@ -65,11 +67,13 @@ class Sreality:
                     # If the owner didn't mention city part or price, skip
                     if locality_text == None or price_text == "Info o ceně u RK":
                         continue
+                    price_text = price_text.replace(" ", "")
+                    price_text = price_text.replace("Kč", "")
                     writer.writerow([no_of_rooms, area, locality_text, price_text])
 
-                next_btn = self.driver.find_element(By.CLASS_NAME, "paging-next")
+                next_btn = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "paging-next")))
                 next_btn.click()
-                time.sleep(10)
+
                 i += 1
 
             self.driver.quit()
