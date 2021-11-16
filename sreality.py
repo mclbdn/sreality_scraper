@@ -7,10 +7,11 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class Sreality:
-    def __init__(self, driver: WebDriver, no_of_pages_to_scrape: int = 10000) -> None:
+    def __init__(self, driver: WebDriver, csv_name: str, no_of_pages_to_scrape: int = 10000) -> None:
         self.URL = "https://www.sreality.cz/hledani/prodej/byty/praha?bez-aukce=1"
         self.CSV_HEADER = ["no_of_rooms", "area_in_m2", "locality", "price_in_kc"]
         self.driver = driver
+        self.csv_name = csv_name
         self.no_of_pages_to_scrape = no_of_pages_to_scrape
         self.driver.get(self.URL)
 
@@ -46,7 +47,7 @@ class Sreality:
                 return area
 
     def write_to_csv(self):
-        with open("properties.csv", "w", encoding="UTF8") as f:
+        with open(f"{self.csv_name}.csv", "w", encoding="UTF8") as f:
             writer = csv.writer(f)
 
             writer.writerow(self.CSV_HEADER)
@@ -71,9 +72,13 @@ class Sreality:
                     price_text = price_text.replace("Kč", "")
                     writer.writerow([no_of_rooms, area, locality_text, price_text])
 
-                next_btn = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, "paging-next")))
-                next_btn.click()
+                if i < self.no_of_pages_to_scrape:
+                    next_btn = WebDriverWait(self.driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, "paging-next"))
+                    )
+                    next_btn.click()
+                else:
+                    return
 
                 i += 1
-
             self.driver.quit()
