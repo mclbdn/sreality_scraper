@@ -9,6 +9,7 @@ class ChartMaker:
     def make_a_bar_chart(self):
         pd.options.display.float_format = "{:,.2f}".format
         df = pd.read_csv(f"{self.csv_name}.csv")
+        df.drop_duplicates(subset=None, inplace=True)
         df["price_in_kc"] = df["price_in_kc"].astype(float)
         grouped_df = df.groupby("locality")
         mean_df = grouped_df.mean()

@@ -4,6 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+print("####################################################################")
+print("Hello and welcome to the Sreality scraper")
+no_of_pages_to_scrape = input("How many pages do you wish to scrape? ")
+
 s = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=s)
 
