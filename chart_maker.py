@@ -16,7 +16,7 @@ class ChartMaker:
         mean_df = mean_df.reset_index()
         plt.ticklabel_format(style="plain")
         plt.bar(mean_df["locality"], mean_df["price_in_kc"])
-        plt.title(f"Average price of a flat in Prague based on Sreality.cz offers\n(first {self.num_of_pages} pages)", fontsize=14)
+        plt.title(f"Average price of a flat in Prague based on Sreality.cz offers\n(first {self.num_of_pages} {'pages' if self.num_of_pages > 1 else 'page'})", fontsize=14)
         plt.xlabel("Locality", fontsize=14)
         plt.ylabel("Price", fontsize=14)
         current_values = plt.gca().get_yticks()
