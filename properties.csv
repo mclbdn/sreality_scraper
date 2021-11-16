@@ -1,15 +1,24 @@
 no_of_rooms,area_in_m2,locality,price_in_kc
 2+kk,58m²,Praha 2,9900000
+3+kk,68m²,Praha 3,8500000
+2+kk,60m²,Praha 3,6950000
+3+kk,143m²,Praha 3,9650000
+3+kk,57m²,Praha 4,7490000
+3+kk,69m²,Praha 2,10192000
+3+kk,107m²,Praha 1,18200000
 3+1,87m²,Praha 5,8890000
+2+kk,54m²,Praha 4,5950000
 3+kk,113m²,Praha 3,13500000
 4+1,122m²,Praha 1,24990000
 1+kk,24m²,Praha 1,3000000
 3+kk,115m²,Praha 5,9450000
 2+kk,51m²,Praha 5,5990000
+2+kk,57m²,Praha 5,6255000
 3+kk,101m²,Praha 4,12500000
 3+kk,154m²,Praha 5,15790000
 3+kk,80m²,Praha 9,8950000
 3+1,67m²,Praha 4,6400000
+2+kk,58m²,Praha 2,9900000
 2+kk,46m²,Praha 1,4718369
 3+1,70m²,Praha 9,6394192
 3+kk,67m²,Praha 4,7390000
@@ -20,7 +29,6 @@ no_of_rooms,area_in_m2,locality,price_in_kc
 3+1,74m²,Praha 5,7749000
 3+kk,85m²,Praha 5,12990000
 3+1,262m²,Praha 1,25900000
-3+kk,100m²,Praha 8,11499000
 3+kk,60m²,Praha 4,7496060
 4+1,95m²,Praha 1,9300000
 3+kk,117m²,Praha 7,11150000
@@ -31,6 +39,7 @@ no_of_rooms,area_in_m2,locality,price_in_kc
 2+kk,46m²,Praha 3,7852516
 1+kk,37m²,Praha 1,6447660
 3+1,82m²,Praha 8,8450000
+4+kk,104m²,Praha 8,13739348
 3+kk,74m²,Praha 4,6300000
 3+1,187m²,Praha 1,13000000
 1+1,46m²,Praha 5,7200000
@@ -40,7 +49,6 @@ no_of_rooms,area_in_m2,locality,price_in_kc
 3+kk,67m²,Praha 9,7880000
 2+kk,67m²,Praha 5,5999000
 2+1,73m²,Praha 9,7850000
-4+kk,104m²,Praha 8,13739348
 3+1,70m²,Praha 4,5500000
 3+kk,130m²,Praha 3,15500000
 2+1,65m²,Praha 3,8500000
@@ -50,11 +58,3 @@ no_of_rooms,area_in_m2,locality,price_in_kc
 2+kk,45m²,Praha 5,4990000
 4+kk,96m²,Praha 9,8490000
 2+kk,46m²,Praha 5,5490000
-3+1,94m²,Praha 4,7300000
-3+kk,79m²,Praha 2,11000000
-2+kk,42m²,Praha 4,4050000
-2+1,73m²,Praha 9,7850000
-2+kk,65m²,Praha 3,8200000
-3+1,79m²,Praha 8,6990000
-2+kk,46m²,Praha 9,3195000
-4+1,75m²,Praha 4,7980000

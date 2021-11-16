@@ -6,7 +6,14 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 print("####################################################################")
 print("Hello and welcome to the Sreality scraper")
-no_of_pages_to_scrape = input("How many pages do you wish to scrape? ")
+
+while True:
+    try:
+        no_of_pages_to_scrape = int(input("How many pages do you wish to scrape? "))
+    except ValueError:
+        print("That's not an int!")
+    else:
+        break
 
 s = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=s)
