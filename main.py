@@ -3,6 +3,10 @@ from chart_maker import ChartMaker
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+import warnings
+
+# Supress plt warnings in the terminal
+warnings.filterwarnings("ignore")
 
 print("Hello and welcome to Sreality scraper")
 
@@ -19,7 +23,9 @@ while True:
         break
 
 
-generate_bar_chart_user_response = input("Do you wish to generate a bar chart of scraped data? If yes, type 'y', otherwise press and enter any other key to exit: ")
+generate_bar_chart_user_response = input(
+    "Do you wish to generate a bar chart of scraped data? If yes, type 'y', otherwise type any key and press return to exit: "
+)
 
 if generate_bar_chart_user_response.lower() == "y":
     chart_maker = ChartMaker(csv_name=sreality.csv_name, num_of_pages=sreality.no_of_pages_to_scrape)
