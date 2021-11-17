@@ -1,4 +1,6 @@
 no_of_rooms,area_in_m2,locality,price_in_kc
+4+kk,104m²,Praha 8,13739348
+3+kk,83m²,Praha 1,25300000
 3+kk,65m²,Praha 8,9600000
 3+kk,104m²,Praha 8,14990000
 2+kk,62m²,Praha 1,8950000
@@ -18,4 +20,3 @@ no_of_rooms,area_in_m2,locality,price_in_kc
 3+kk,60m²,Praha 4,7496060
 1+kk,36m²,Praha 4,4508120
 3+1,187m²,Praha 1,13000000
-3+kk,74m²,Praha 4,6300000

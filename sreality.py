@@ -14,6 +14,7 @@ class Sreality:
         self.csv_name = csv_name
         self.no_of_pages_to_scrape = no_of_pages_to_scrape
         self.driver.get(self.URL)
+        self.write_to_csv()
 
     # Replace text i.e. "Prodej bytu 3+1 94 m² (Podkrovní)" for a list of area & no_of_rooms
     def get_area_and_no_of_rooms(self, text: str):
