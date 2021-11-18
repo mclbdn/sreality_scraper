@@ -2,7 +2,9 @@
 
 Python script scraping Sreality's Prague flat data [no_of_rooms, area_in_m2, locality, price_in_kc] into a single CSV file.
 
-There's also a posibility to generate a bar chart showing average flat price in Prague based on Sreality's first X pages and depending on its locality.
+There's also a posibility to generate a bar chart showing average flat price in Prague based on Sreality's first x pages and on its locality.
+
+This program uses Selenium.
 
 
 ## Usage
